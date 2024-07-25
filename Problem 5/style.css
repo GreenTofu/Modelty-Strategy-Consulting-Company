@@ -1,0 +1,117 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    background-color: #e8e9e9;
+}
+
+.formDiv {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;;
+    margin-bottom: 35px;
+}
+
+h2.intro {
+    text-align: center;
+    margin-top: 50px;
+    color: steelblue;
+}
+
+.info-form {
+    width: 100%;
+    display: flex;
+    max-width: 400px;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.info-form label {
+    flex: 0 0 150px;
+    padding-right: 10px;
+}
+
+.info-form input,
+.info-form select {
+    flex: 1;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.input-error{
+    outline: 1px solid red;
+}
+
+.color-preview {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    border: 1px solid;
+}
+
+.submitted-data {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.submitted-data h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.submitted-data-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submitted-data-item {
+    display: flex;
+    align-items: center;
+}
+
+.submitted-data-label {
+    flex: 0 0 150px;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.submitted-data-value {
+    flex: 1;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.hidden {
+    display: none;
+}

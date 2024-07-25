@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Problem 5</title>
+</head>
+
+<body>
+    <div class="container page-body">
+        <div class="formDiv">
+            <h2 class="intro">Please tell me a little bit about yourself</h2>
+            <form class="form" action="index.html" method="post">
+                <div class="info-form name-div">
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="info-form age-div">
+                    <label for="age">Your Age:</label>
+                    <input type="number" name="age" id="age" required>
+                    <div id="ageNotification" class="notification"></div>
+                </div>
+                <div class="info-form color-select">
+                    <label for="fav-color">Your Favorite Color:</label>
+                    <select name="fav-color" id="color-select"></select>
+                    <div class="color-preview" id="color-preview"></div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="submitted-data hidden">
+            <h2>Submitted Data</h2>
+            <div class="submitted-data-content">
+                <div class="submitted-data-item">
+                    <p class="submitted-data-label">Name:</p>
+                    <span class="submitted-data-value" id="submitted-name"></span>
+                </div>
+                <div class="submitted-data-item">
+                    <p class="submitted-data-label">Age:</p>
+                    <span class="submitted-data-value" id="submitted-age"></span>
+                </div>
+                <div class="submitted-data-item">
+                    <p class="submitted-data-label">Favorite Color:</p>
+                    <span class="submitted-data-value" id="submitted-color"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
